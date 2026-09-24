@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HealthPlus | Healthcare</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">+</span>
+                Health<span>Plus</span>
+            </a>
+
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="active">Home</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#departments">Departments</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#appointment" class="nav-btn">
+                Book Appointment
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-container">
+
+                <div class="hero-content">
+
+                    <div class="availability">
+                        <span></span>
+                        Available for your care
+                    </div>
+
+                    <h1>
+                        Your Trusted Partner in
+                        <span>HealthPlus</span>
+                    </h1>
+
+                    <p>
+                        Quality healthcare made simple. Find experienced
+                        doctors, book appointments and get the care you
+                        deserve — all in one place.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#appointment" class="primary-btn">
+                            Book Appointment
+                            <span>→</span>
+                        </a>
+
+                        <a href="#doctors" class="secondary-btn">
+                            Find Doctors
+                        </a>
+
+                    </div>
+
+                    <div class="hero-stats">
+
+                        <div class="stat">
+                            <strong>500+</strong>
+                            <span>Expert Doctors</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>24/7</strong>
+                            <span>Support</span>
+                        </div>
+
+                        <div class="stat">
+                            <strong>10k+</strong>
+                            <span>Happy Patients</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- HERO IMAGE -->
+
+                <div class="hero-image">
+
+                    <div class="image-bg"></div>
+
+                    <img
+                        src="images/expert doctor (1).png"
+                        alt="Expert Doctor"
+                    >
+
+                    <!-- Doctor Card -->
+
+                    <div class="floating-card doctor-card">
+
+                        <div class="avatar">
+                            👨‍⚕️
+                        </div>
+
+                        <div>
+                            <strong>Dr. Rahul Sharma</strong>
+                            <small>Senior Cardiologist</small>
+                        </div>
+
+                        <span class="verified">✓</span>
+
+                    </div>
+
+
+                    <!-- Speciality Card -->
+
+                    <div class="floating-card speciality-card">
+
+                        <div class="card-icon blue">
+                            ♥
+                        </div>
+
+                        <div>
+                            <small>Speciality</small>
+                            <strong>Cardiology</strong>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Rating Card -->
+
+                    <div class="floating-card rating-card">
+
+                        <div class="rating-stars">
+                            ★★★★★
+                        </div>
+
+                        <strong>4.8 Rating</strong>
+
+                        <small>2,000+ Reviews</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SEARCH DOCTOR ================= -->
+
+        <section class="search-section">
+
+            <div class="container">
+
+                <div class="search-box">
+
+                    <div class="search-title">
+                        <div class="search-icon">⌕</div>
+
+                        <div>
+                            <h3>Find the right doctor</h3>
+                            <p>Search by doctor name or speciality</p>
+                        </div>
+                    </div>
+
+                    <div class="search-input">
+
+                        <input
+                            type="text"
+                            id="doctorSearch"
+                            placeholder="Search doctor or speciality..."
+                        >
+
+                        <button id="searchBtn">
+                            Search
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DOCTORS ================= -->
+
+        <section class="doctors-section" id="doctors">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">OUR SPECIALISTS</span>
+
+                        <h2>
+                            Meet Our Expert
+                            <span>Doctors</span>
+                        </h2>
+                    </div>
+
+                    <a href="#" class="view-all">
+                        View All Doctors →
+                    </a>
+
+                </div>
+
+
+                <div class="doctor-grid" id="doctorGrid">
+
+                    <!-- Doctor 1 -->
+
+                    <div class="doctor-card-item" data-name="rahul sharma" data-speciality="cardiologist">
+
+                        <div class="doctor-photo">
+                            <img
+                                src="images/aman.png"
+                                alt="aman"
+                            >
+
+                            <span class="online">
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="doctor-info">
+
+                            <h3>Dr. Rahul Sharma</h3>
+
+                            <p>Cardiologist</p>
+
+                            <div class="doctor-meta">
+                                <span>⭐ 4.9</span>
+                                <span>12 Years Exp.</span>
+                            </div>
+
+                            <button
+                                class="doctor-btn"
+                                onclick="openAppointment('Dr. Rahul Sharma')"
+                            >
+                                Book Appointment
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Doctor 2 -->
+
+                    <div class="doctor-card-item" data-name="neha verma" data-speciality="dermatologist">
+
+                        <div class="doctor-photo">
+                            <img
+                                src="images/suhani.png"
+                                alt="Suhani"
+                            >
+
+                            <span class="online">
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="doctor-info">
+
+                            <h3>Dr. Neha Verma</h3>
+
+                            <p>Dermatologist</p>
+
+                            <div class="doctor-meta">
+                                <span>⭐ 4.8</span>
+                                <span>9 Years Exp.</span>
+                            </div>
+
+                            <button
+                                class="doctor-btn"
+                                onclick="openAppointment('Dr. Neha Verma')"
+                            >
+                                Book Appointment
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Doctor 3 -->
+
+                    <div class="doctor-card-item" data-name="amit patel" data-speciality="neurologist">
+
+                        <div class="doctor-photo">
+                            <img
+                                src="images/saurabh1.png"
+                                alt="Saurabh"
+                            >
+
+                            <span class="online">
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="doctor-info">
+
+                            <h3>Dr. Amit Patel</h3>
+
+                            <p>Neurologist</p>
+
+                            <div class="doctor-meta">
+                                <span>⭐ 4.9</span>
+                                <span>15 Years Exp.</span>
+                            </div>
+
+                            <button
+                                class="doctor-btn"
+                                onclick="openAppointment('Dr. Amit Patel')"
+                            >
+                                Book Appointment
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Doctor 4 -->
+
+                    <div class="doctor-card-item" data-name="priya mehta" data-speciality="pediatrician">
+
+                        <div class="doctor-photo">
+                            <img
+                                src="images/aman.png"
+                                alt="Aman"
+                            >
+
+                            <span class="online">
+                                Available
+                            </span>
+                        </div>
+
+                        <div class="doctor-info">
+
+                            <h3>Dr. Priya Mehta</h3>
+
+                            <p>Pediatrician</p>
+
+                            <div class="doctor-meta">
+                                <span>⭐ 4.9</span>
+                                <span>11 Years Exp.</span>
+                            </div>
+
+                            <button
+                                class="doctor-btn"
+                                onclick="openAppointment('Dr. Priya Mehta')"
+                            >
+                                Book Appointment
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DEPARTMENTS ================= -->
+
+        <section class="departments-section" id="departments">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        HEALTHCARE DEPARTMENTS
+                    </span>
+
+                    <h2>
+                        Find Care That
+                        <span>Fits You</span>
+                    </h2>
+
+                    <p>
+                        Choose from our wide range of medical specialities
+                        and get expert care from trusted professionals.
+                    </p>
+
+                </div>
+
+
+                <div class="department-grid">
+
+                    <div
+                        class="department-card active"
+                        onclick="selectDepartment(this, 'Cardiology')"
+                    >
+                        <div class="department-icon">♥</div>
+                        <h3>Cardiology</h3>
+                        <p>Heart & vascular care</p>
+                        <span>→</span>
+                    </div>
+
+
+                    <div
+                        class="department-card"
+                        onclick="selectDepartment(this, 'Neurology')"
+                    >
+                        <div class="department-icon">🧠</div>
+                        <h3>Neurology</h3>
+                        <p>Brain & nervous system</p>
+                        <span>→</span>
+                    </div>
+
+
+                    <div
+                        class="department-card"
+                        onclick="selectDepartment(this, 'Dermatology')"
+                    >
+                        <div class="department-icon">✦</div>
+                        <h3>Dermatology</h3>
+                        <p>Skin & hair care</p>
+                        <span>→</span>
+                    </div>
+
+
+                    <div
+                        class="department-card"
+                        onclick="selectDepartment(this, 'Pediatrics')"
+                    >
+                        <div class="department-icon">♧</div>
+                        <h3>Pediatrics</h3>
+                        <p>Child healthcare</p>
+                        <span>→</span>
+                    </div>
+
+
+                    <div
+                        class="department-card"
+                        onclick="selectDepartment(this, 'Orthopedics')"
+                    >
+                        <div class="department-icon">🦴</div>
+                        <h3>Orthopedics</h3>
+                        <p>Bone & joint care</p>
+                        <span>→</span>
+                    </div>
+
+
+                    <div
+                        class="department-card"
+                        onclick="selectDepartment(this, 'Dentistry')"
+                    >
+                        <div class="department-icon">☻</div>
+                        <h3>Dentistry</h3>
+                        <p>Dental & oral care</p>
+                        <span>→</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT / WHY CHOOSE HEALTHPLUS ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="container about-container">
+
+        <!-- LEFT SIDE IMAGE -->
+
+        <div class="about-image">
+
+            <div class="about-image-bg"></div>
+
+            <img
+                src="images/expert doctor (1).png"
+                alt="HealthPlus Expert Doctor"
+                class="about-doctor-img"
+            >
+
+            <!-- Experience Card -->
+
+            <div class="about-stat">
+
+                <strong>15+</strong>
+
+                <span>Years of Excellence</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT SIDE CONTENT -->
+
+        <div class="about-content">
+
+            <span class="section-label">
+                WHY CHOOSE HEALTHPLUS
+            </span>
+
+            <h2>
+                Healthcare You Can
+                <span>Trust</span>
+            </h2>
+
+            <p class="about-description">
+                At HealthPlus, we believe everyone deserves access
+                to quality healthcare. Our platform connects you
+                with experienced medical professionals and makes
+                healthcare simple, accessible and convenient.
+            </p>
+
+
+            <!-- FEATURES -->
+
+            <div class="feature-list">
+
+
+                <!-- FEATURE 1 -->
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <div class="feature-content">
+
+                        <h3>
+                            Experienced Doctors
+                        </h3>
+
+                        <p>
+                            Highly qualified healthcare professionals
+                            dedicated to providing the best care.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURE 2 -->
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <div class="feature-content">
+
+                        <h3>
+                            Easy Appointment
+                        </h3>
+
+                        <p>
+                            Book your appointment quickly and easily
+                            in just a few simple clicks.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FEATURE 3 -->
+
+                <div class="feature">
+
+                    <div class="feature-icon">
+                        ✓
+                    </div>
+
+                    <div class="feature-content">
+
+                        <h3>
+                            24/7 Support
+                        </h3>
+
+                        <p>
+                            Our support team is always available
+                            whenever you need assistance.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- ================= APPOINTMENT ================= -->
+
+        <section class="appointment-section" id="appointment">
+
+            <div class="container">
+
+                <div class="appointment-box">
+
+                    <div class="appointment-content">
+
+                        <span class="section-label">
+                            BOOK YOUR VISIT
+                        </span>
+
+                        <h2>
+                            Take the First Step
+                            Towards Better <span>Health</span>
+                        </h2>
+
+                        <p>
+                            Schedule an appointment with one of our
+                            experienced doctors today.
+                        </p>
+
+                        <div class="appointment-info">
+
+                            <div>
+                                <strong>📞</strong>
+                                <span>+91 98765 43210</span>
+                            </div>
+
+                            <div>
+                                <strong>✉</strong>
+                                <span>support@healthplus.com</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <form class="appointment-form" id="appointmentForm">
+
+                        <h3>Book an Appointment</h3>
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+                                <label>Full Name</label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    placeholder="Enter your name"
+                                    required
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label>Phone Number</label>
+
+                                <input
+                                    type="tel"
+                                    id="phone"
+                                    placeholder="Enter phone number"
+                                    required
+                                >
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-row">
+
+                            <div class="form-group">
+
+                                <label>Department</label>
+
+                                <select id="department" required>
+
+                                    <option value="">
+                                        Select Department
+                                    </option>
+
+                                    <option>Cardiology</option>
+                                    <option>Neurology</option>
+                                    <option>Dermatology</option>
+                                    <option>Pediatrics</option>
+                                    <option>Orthopedics</option>
+                                    <option>Dentistry</option>
+
+                                </select>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label>Date</label>
+
+                                <input
+                                    type="date"
+                                    id="date"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label>Message</label>
+
+                            <textarea
+                                id="message"
+                                rows="3"
+                                placeholder="Tell us about your concern..."
+                            ></textarea>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="submit-btn"
+                        >
+                            Confirm Appointment →
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TESTIMONIALS ================= -->
+
+        <section class="testimonial-section">
+
+            <div class="container">
+
+                <div class="section-heading center">
+
+                    <span class="section-label">
+                        PATIENT STORIES
+                    </span>
+
+                    <h2>
+                        What Our Patients
+                        <span>Say</span>
+                    </h2>
+
+                </div>
+
+
+                <div class="testimonial-grid">
+
+                    <div class="testimonial-card">
+
+                        <div class="quote">“</div>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            HealthPlus made finding the right doctor
+                            incredibly easy. The appointment process
+                            was smooth and simple.
+                        </p>
+
+                        <div class="patient">
+
+                            <div class="patient-avatar">
+                                AS
+                            </div>
+
+                            <div>
+                                <strong>Anjali Sharma</strong>
+                                <small>Verified Patient</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial-card">
+
+                        <div class="quote">“</div>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            The doctors are professional and caring.
+                            I had a great experience with HealthPlus
+                            and would definitely recommend it.
+                        </p>
+
+                        <div class="patient">
+
+                            <div class="patient-avatar">
+                                RK
+                            </div>
+
+                            <div>
+                                <strong>Rohit Kumar</strong>
+                                <small>Verified Patient</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="testimonial-card">
+
+                        <div class="quote">“</div>
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            Booking an appointment was quick and
+                            convenient. HealthPlus is now my first
+                            choice for healthcare.
+                        </p>
+
+                        <div class="patient">
+
+                            <div class="patient-avatar">
+                                PM
+                            </div>
+
+                            <div>
+                                <strong>Priya Mehta</strong>
+                                <small>Verified Patient</small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer" id="contact">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#" class="logo">
+                    <span class="logo-icon">+</span>
+                    Health<span>Plus</span>
+                </a>
+
+                <p>
+                    Your trusted partner for better healthcare.
+                    Quality care, experienced doctors and easy
+                    appointments — all in one place.
+                </p>
+
+                <div class="socials">
+
+                    <a href="#">f</a>
+                    <a href="#">𝕏</a>
+                    <a href="#">in</a>
+                    <a href="#">◎</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+                <a href="#doctors">Doctors</a>
+                <a href="#departments">Departments</a>
+                <a href="#about">About Us</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Services</h3>
+
+                <a href="#">Find a Doctor</a>
+                <a href="#appointment">Book Appointment</a>
+                <a href="#">Health Checkup</a>
+                <a href="#">Emergency Care</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contact</h3>
+
+                <p>📍 Mumbai, Maharashtra</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉ support@healthplus.com</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 HealthPlus. All rights reserved.
+                </p>
+
+                <div>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
